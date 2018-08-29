@@ -1,0 +1,31 @@
+﻿@model MyFirstMVCApp.Web.Models.Libs
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div id="indexContent">
+    <div id="indexHead">
+        <h1 style="color:deepskyblue">Welcome to Crazy Libs!</h1>
+
+        <h2 style="color:deepskyblue">Please select a puzzle: </h2>
+    </div>
+    <div class="pics">
+        <a href="@Url.Action("PuzzleOne", "Response", null)">
+            <img src="~/Content/resizedFarm.jpg">
+        </a>
+
+
+
+
+        <a href="@Url.Action("PuzzleTwo", "Response", null)">
+            <img src="~/Content/resizedRockstar.png" />
+        </a>
+
+
+
+        <a href="@Url.Action("PuzzleThree", "Response", null)">
+
+            <img src="~/Content/resizedMoon.jpg" />
+        </a>
+
+    </div>
+</div>

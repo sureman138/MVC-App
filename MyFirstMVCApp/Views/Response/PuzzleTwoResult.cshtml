@@ -1,0 +1,27 @@
+﻿@model MyFirstMVCApp.Web.Models.Libs
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div id="resultContent">
+    <h1>@Model.Name, here's your life as a rockstar!</h1>
+    <div id="text">
+
+        <p>Being a rockstar is a curious occupation indeed. Most people don't realize the key to being successful is to <strong style="color:crimson">@Model.InputOne</strong> more than anyone else.</p>
+        <break />
+        <p>Even though most people consider you to be <strong style="color:dodgerblue">@Model.InputTwo</strong>, you don't care!</p>
+        <break />
+        <p>Each and every night you give your <strong style="color:goldenrod">@Model.InputThree</strong> and soul to that crowd no matter what.</p>
+        <break />
+        <p>
+            It's not about the money or looking <strong style="color:hotpink">@Model.InputFour</strong>, oh no. It's all about your ability to
+            <strong style="color:olivedrab">@Model.InputFive</strong> for the fans!
+        </p>
+        <br />
+        <br />
+    </div>
+    
+    <div>
+        <p>@Html.ActionLink("Return Home", "Index", "Home")</p>
+    </div>
+    
+</div>

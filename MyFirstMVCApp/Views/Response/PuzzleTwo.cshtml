@@ -1,0 +1,55 @@
+﻿@model MyFirstMVCApp.Web.Models.Libs
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div id="content">
+    <h1>Puzzle Two!</h1>
+
+
+    <h1>Your Life as a Rockstar</h1>
+
+    <p style="font-weight:bold">Please Fill In Parts Of Speech For The Following: </p>
+    @using (Html.BeginForm("PuzzleTwo", "Response", FormMethod.Post))
+    {
+        <div id="form">
+            <div id="childForm">
+                <table>
+                    @Html.HiddenFor(m => m.responseId)
+                    <tr style="font-weight:bold">
+                        <td>@Html.LabelFor(m => m.Name, "Your Name: ")</td>
+                        <td>@Html.TextBoxFor(m => m.Name)</td>
+                        <td>@Html.ValidationMessageFor(m => m.Name)</td>
+                    </tr>
+
+                    <tr style="font-weight:bold">
+                        <td>@Html.LabelFor(m => m.InputOne, "Verb: ")</td>
+
+                        <td>@Html.TextBoxFor(m => m.InputOne)</td>
+                        <td>@Html.ValidationMessageFor(m => m.InputOne)</td>
+                    </tr>
+                    <tr style="font-weight:bold">
+                        <td>@Html.LabelFor(m => m.InputTwo, "Adjective: ")</td>
+                        <td>@Html.TextBoxFor(m => m.InputTwo)</td>
+                        <td>@Html.ValidationMessageFor(m => m.InputTwo)</td>
+                    </tr>
+                    <tr style="font-weight:bold">
+                        <td>@Html.LabelFor(m => m.InputThree, "Noun: ")</td>
+                        <td>@Html.TextBoxFor(m => m.InputThree)</td>
+                        <td>@Html.ValidationMessageFor(m => m.InputThree)</td>
+                    </tr>
+                    <tr style="font-weight:bold">
+                        <td>@Html.LabelFor(m => m.InputFour, "Adjective: ")</td>
+                        <td>@Html.TextBoxFor(m => m.InputFour)</td>
+                        <td>@Html.ValidationMessageFor(m => m.InputFour)</td>
+                    </tr>
+                    <tr style="font-weight:bold">
+                        <td>@Html.LabelFor(m => m.InputFive, "Verb: ")</td>
+                        <td>@Html.TextBoxFor(m => m.InputFive)</td>
+                        <td>@Html.ValidationMessageFor(m => m.InputFive)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <button>See Your Story!</button>
+    }
+</div>

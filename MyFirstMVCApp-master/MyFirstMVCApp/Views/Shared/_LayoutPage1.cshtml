@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/style.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Puzzle One!", "PuzzleOne", "Response")</li>
+            <li>@Html.ActionLink("Puzzle Two!", "PuzzleTwo", "Response")</li>
+            <li>@Html.ActionLink("Puzzle Three!", "PuzzleThree", "Response")</li>
+        </ul>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

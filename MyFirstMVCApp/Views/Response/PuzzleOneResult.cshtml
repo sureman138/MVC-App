@@ -1,0 +1,29 @@
+﻿@model MyFirstMVCApp.Web.Models.Libs
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div id="resultContent">
+    <h1>@Model.Name, here's your tale of Farmer Ned</h1>
+
+    <div id="text">
+        <p>
+            Farmer Ned was one of the most famous farmers in all of the Midwest.
+            In fact, he was so famous the local townspeople used to call him the <strong style="color:chocolate">@Model.InputOne.</strong>
+        </p>
+        <break />
+        <p>Despite his fame, Farmer Ned always used to act <strong style="color:blue">@Model.InputTwo.</strong></p>
+        <break />
+        <p>Every morning when Farmer Ned woke up, he'd always eat breakfast and then <strong style="color:red">@Model.InputThree</strong> his way right over to the barnyard.</p>
+        <break />
+        <p>Yeah, it'd be hard to call old Farmer Ned anything other than a real <strong style="color:mediumpurple">@Model.InputFour.</strong></p>
+        <break />
+        <p>That's probably why they built Farmer Ned a great big <strong style="color:orangered">@Model.InputFive</strong> statue that people from far and wide came to see!</p>
+        <br />
+        <br />
+    </div>
+    
+    <div>
+        <p>@Html.ActionLink("Return Home", "Index", "Home")</p>
+    </div>
+
+</div>

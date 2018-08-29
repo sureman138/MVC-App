@@ -1,0 +1,148 @@
+﻿body, header, nav, div, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: #0099CC;
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    float: left;
+    background-color:#8DC63F;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+
+nav li {
+    color:deepskyblue;
+    list-style: none;
+    color: white;
+    margin-left: 25px;
+    float: left;
+    font-size: 1.2em;
+}
+
+nav li a { 
+    color: white;    
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+#main-content {
+    display: block;
+    clear: both;
+    width: 80%;
+    margin: 20px auto;        
+    min-height: 450px;
+    background-color: #F2F1ED;
+    border-radius: 7px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    padding: 10px;    
+}
+
+form div {
+    margin: 15px auto;           
+}
+
+form div label {
+    font-size: 1.1em;
+    width: 300px;
+    display: inline-block;    
+}
+
+input[type=text], input[type=password], input[type=email], select {
+    height: 25px;
+    font-size: 1.1em;
+    width: 300px;   
+ 
+}
+
+.field-validation-error {
+    color: red;   
+    
+    
+}
+
+input[type=radio] {
+    padding-right: 20px;
+}
+
+form button {
+    padding: 5px;
+    background-color: white;
+    font-size: 1.1em;
+ 
+}
+
+
+/* Table Styles */
+table {
+    margin: 20px auto;
+}
+
+.pics{
+    display:inline-block;
+    padding-left:100px;
+    
+}
+
+.pics :nth-child(1){
+    
+    padding-right:10px;
+}
+.pics :nth-child(2){
+    padding-left:10px;
+    padding-right:10px;
+}
+.pics:nth-last-child(){
+    padding-left:10px;
+    padding-right:10px;
+}
+#indexContent{
+    background-color:lemonchiffon;
+}
+
+#content{
+    text-align:center;
+    background-color:lemonchiffon;
+}
+#resultContent{
+     background-color:lemonchiffon;
+}
+#text{
+    font-size:28px;
+    font-style:oblique;
+}
+#indexHead{
+    text-align:center;
+}
+#form{
+     display:table; height:100%; margin: 0 auto;
+ }
+ #childForm{
+     display:table-cell; vertical-align:middle; padding-right:200px; text-align:right;
+
+ }
+

@@ -1,0 +1,25 @@
+﻿@model MyFirstMVCApp.Web.Models.Libs
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div id="resultContent">
+    <h1>@Model.Name, here's your trip to the moon!</h1>
+
+    <div id="text">
+        <p>"Houston, this is <strong style="color:seagreen">@Model.InputOne</strong>, are we clear for take off?"</p>
+        <break />
+        <p>"Apollo twenty-five, this is Houston. Are things still looking <strong style="color:darkorange">@Model.InputTwo</strong> at the launch site?"</p>
+        <break />
+        <p>"That's a negative, Houston. We're all clear to <strong style="color:sienna">@Model.InputThree</strong> and get this ship moving."</p>
+        <break />
+        <p>"Affirmative, Appolo twenty-five. As soon as you <strong style="color:darkcyan">@Model.InputFour</strong> you are cleared for launch."</p>
+        <break />
+        <p>"Ten-four, Houston. Five...four...three...two...one...We are now on course for another <strong style="color:darkmagenta">@Model.InputFive</strong> lunar landing."</p>
+        <br />
+        <br />
+    </div>
+    <div>
+        <p>@Html.ActionLink("Return Home", "Index", "Home")</p>
+    </div>
+</div>
+
